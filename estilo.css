@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fff5f7; /* Fundo suave levemente rosado */
+  color: #4a2e35;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #97266d; /* Rosa escuro vibrante */
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #702459;
+}
+
+/* Seção do Contexto da Pesquisa */
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.info-card {
+  background: white;
+  border-left: 4px solid #d53f8c; /* Detalhe em rosa médio */
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 280px;
+  box-shadow: 0 2px 10px rgba(184, 50, 128, 0.08);
+}
+
+.info-card h3 {
+  color: #b83280;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.info-card p {
+  color: #5a3a42;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #97266d;
+  margin-bottom: 8px;
+}
+
+.instructions {
+  text-align: center;
+  color: #83475f;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Grid dos Cartões */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Flip Card 3D */
+.card {
+  background-color: transparent;
+  width: 320px;
+  height: 280px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(184, 50, 128, 0.12);
+  cursor: pointer;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Frente do Cartão */
+.card-front {
+  background: #ffffff;
+  color: #97266d;
+  border: 2px solid #fed7e2; /* Borda rosa clara */
+  align-items: center;
+}
+
+.card-number {
+  background: #fff0f6;
+  color: #b83280;
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid #fbb6ce;
+}
+
+.card-front h3 {
+  font-size: 1.15rem;
+  line-height: 1.4;
+  color: #702459;
+}
+
+/* Verso do Cartão (Gradiente Rosa) */
+.card-back {
+  background: linear-gradient(135deg, #d53f8c, #702459);
+  color: white;
+  transform: rotateY(180deg);
+  text-align: left;
+  overflow-y: auto;
+}
+
+.card-back h4 {
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  color: #ffe4e6;
+}
+
+.card-back ul {
+  list-style: none;
+}
+
+.card-back li {
+  font-size: 0.88rem;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-back .percentage {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  white-space: nowrap;
+}
