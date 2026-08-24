@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(255, 208, 217);
+    background-color: rgb(220, 184, 252);
     font-family: sans-serif;
 }
 
@@ -17,16 +17,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(255, 174, 224);
+    background-color: rgb(233, 104, 245);
 }
 
 .cabecalho-link {
-    color: #fa89b8;
+    color: #c670f7;
     text-decoration: none;
 }
 
 h1 {
-    color: #ffabdc;
+    color: #9f61c5;
 }
 
 main {
@@ -94,7 +94,7 @@ section {
 }
 
 footer {
-    background-color: #ff588a;
+    background-color: #b158ff;
     padding: 15px 25px;
     text-align: center;
     color: white;
