@@ -1,40 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Análise das Dificuldades de Visão dos Alunos</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css"/>
+    <title>Confere AI</title>
 </head>
 <body>
-
-  <header>
-    <h1>Pesquisa sobre Dificuldades de Visão</h1>
-    <p class="subtitle">Análise realizada com estudantes do Ensino Fundamental (6º ao 9º ano)</p>
-  </header>
-
-  <!-- Seção de introdução e contexto da pesquisa -->
-  <section class="info-section">
-    <div class="info-card">
-      <h3>Objetivo</h3>
-      <p>Analisar as dificuldades de visão dos alunos do ensino fundamental do Colégio Estadual Dr. Eduardo Virmond Suplicy.</p>
-    </div>
-    <div class="info-card">
-      <h3>Amostra</h3>
-      <p><strong>148 alunos</strong> participantes dos turnos matutino e vespertino.</p>
-    </div>
-    <div class="info-card">
-      <h3>Metodologia</h3>
-      <p>Questionário composto por <strong>8 perguntas direcionadas</strong>.</p>
-    </div>
-  </section>
-
+   <header class="cabecalho">
+       <h1>Confere Ai</h1>
+       <nav>
+           <a href="#" class="cabecalho-link">Inicio</a>
+       </nav>
+   </header>
   <main>
-    <h2 class="section-title">Resultados por Pergunta</h2>
-    <p class="instructions">Passe o mouse sobre os cartões para ver os percentuais coletados em cada pergunta.</p>
-    <div id="cards-container" class="cards-container"></div>
+      <h2>Descubra a verdade passando o mouse</h2>
+      <section>
+      <article class="cartao">
+          <div class="cartao-interno">
+               <div class="cartao-frente">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2HrQ7uFv0LQupP39qk_-yTTrNI2eKAg9tnW31NnUbwg&s=10" alt="coronavirus" class="cartao-imagem">
+                    <p>Gargarejo com vinagre ou agua morna com sal podem elimina-lo!</p>
+                  </div>
+                  <div class="cartao-verso">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWdI3qbXg275HjGDNKa2JQzO0FXQz7pxlseJ-l9ejptA&s=10" alt="coronavirus" class="cartao-imagem">
+                    <p>Vinagre e sal podem aliviar uma dor de garganta comum, mas nao matam o virus da Covid-19. </p>
+               </div>
+          </div>
+      </article>
+            <article class="cartao">
+          <div class="cartao-interno">
+               <div class="cartao-frente">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2HrQ7uFv0LQupP39qk_-yTTrNI2eKAg9tnW31NnUbwg&s=10" alt="coronavirus" class="cartao-imagem">
+                    <p>Gargarejo com vinagre ou agua morna com sal podem elimina-lo!</p>
+                  </div>
+                  <div class="cartao-verso">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWdI3qbXg275HjGDNKa2JQzO0FXQz7pxlseJ-l9ejptA&s=10" alt="coronavirus" class="cartao-imagem">
+                    <p>Vinagre e sal podem aliviar uma dor de garganta comum, mas nao matam o virus da Covid-19. </p>
+               </div>
+          </div>
+      </article>
+      </section>
   </main>
-
-  <script src="script.js"></script>
+  <footer>
+      <p>Projeto feito por 2B</p>
+  </footer>
 </body>
 </html>
